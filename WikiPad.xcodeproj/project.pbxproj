@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		883D5A642812EA6500D22868 /* WikiPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A502812EA6400D22868 /* WikiPadApp.swift */; };
+		883D5A652812EA6500D22868 /* WikiPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A502812EA6400D22868 /* WikiPadApp.swift */; };
+		883D5A662812EA6500D22868 /* WikiPadDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A512812EA6400D22868 /* WikiPadDocument.swift */; };
+		883D5A672812EA6500D22868 /* WikiPadDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A512812EA6400D22868 /* WikiPadDocument.swift */; };
+		883D5A682812EA6500D22868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A522812EA6400D22868 /* ContentView.swift */; };
+		883D5A692812EA6500D22868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A522812EA6400D22868 /* ContentView.swift */; };
+		883D5A6A2812EA6500D22868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883D5A532812EA6500D22868 /* Assets.xcassets */; };
+		883D5A6B2812EA6500D22868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883D5A532812EA6500D22868 /* Assets.xcassets */; };
+		883D5A752812EB8D00D22868 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A742812EB8D00D22868 /* TextModel.swift */; };
+		883D5A762812EB8D00D22868 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A742812EB8D00D22868 /* TextModel.swift */; };
+		883D5A782812EBDD00D22868 /* TextStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A772812EBDD00D22868 /* TextStore.swift */; };
+		883D5A792812EBDD00D22868 /* TextStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A772812EBDD00D22868 /* TextStore.swift */; };
+		883D5A7C2812F17C00D22868 /* OSLogExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A7B2812F17C00D22868 /* OSLogExtensions.swift */; };
+		883D5A7D2812F17C00D22868 /* OSLogExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A7B2812F17C00D22868 /* OSLogExtensions.swift */; };
+		883D5A7F2812F21A00D22868 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A7E2812F21A00D22868 /* Debug.swift */; };
+		883D5A802812F21A00D22868 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A7E2812F21A00D22868 /* Debug.swift */; };
+		883D5A83281302DA00D22868 /* HypertextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A81281302DA00D22868 /* HypertextEditor.swift */; };
+		883D5A8728130AE300D22868 /* HypertextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A842813033500D22868 /* HypertextEditor.swift */; };
+		883D5A8C281316C700D22868 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A8B281316C700D22868 /* StringExtensions.swift */; };
+		883D5A8D281316C700D22868 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A8B281316C700D22868 /* StringExtensions.swift */; };
+		883D5A92281319F000D22868 /* NSMutableAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A91281319F000D22868 /* NSMutableAttributedStringExtensions.swift */; };
+		883D5A93281319F000D22868 /* NSMutableAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A91281319F000D22868 /* NSMutableAttributedStringExtensions.swift */; };
+		883D5A952813448800D22868 /* NSStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A942813448800D22868 /* NSStringExtensions.swift */; };
+		883D5A962813448900D22868 /* NSStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A942813448800D22868 /* NSStringExtensions.swift */; };
+		883D5A982813452C00D22868 /* ParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A972813452C00D22868 /* ParagraphStyle.swift */; };
+		883D5A992813452C00D22868 /* ParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A972813452C00D22868 /* ParagraphStyle.swift */; };
+		883D5A9C28147BB000D22868 /* HypertextEditorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A9B28147BB000D22868 /* HypertextEditorState.swift */; };
+		883D5A9D28147BB000D22868 /* HypertextEditorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A9B28147BB000D22868 /* HypertextEditorState.swift */; };
+		883D5A9F2815A7D200D22868 /* FileCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A9E2815A7D200D22868 /* FileCommands.swift */; };
+		883D5AA02815A7D200D22868 /* FileCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A9E2815A7D200D22868 /* FileCommands.swift */; };
+		883D5AA22815BA9700D22868 /* TextStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AA12815BA9700D22868 /* TextStoreProtocol.swift */; };
+		883D5AA32815BA9700D22868 /* TextStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AA12815BA9700D22868 /* TextStoreProtocol.swift */; };
+		883D5AA52815BAB800D22868 /* TextStoreMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AA42815BAB800D22868 /* TextStoreMemory.swift */; };
+		883D5AA62815BAB800D22868 /* TextStoreMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AA42815BAB800D22868 /* TextStoreMemory.swift */; };
+		883D5AA82815F7A500D22868 /* FocusedValuesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AA72815F7A500D22868 /* FocusedValuesExtension.swift */; };
+		883D5AA92815F7A500D22868 /* FocusedValuesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AA72815F7A500D22868 /* FocusedValuesExtension.swift */; };
+		883D5AAB28182BA000D22868 /* SidebarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AAA28182BA000D22868 /* SidebarList.swift */; };
+		883D5AAC28182BA000D22868 /* SidebarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AAA28182BA000D22868 /* SidebarList.swift */; };
+		883D5AAE28182CA400D22868 /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AAD28182CA400D22868 /* LibraryRow.swift */; };
+		883D5AAF28182CA400D22868 /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AAD28182CA400D22868 /* LibraryRow.swift */; };
+		883D5AB128182D7E00D22868 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AB028182D7E00D22868 /* Toolbar.swift */; };
+		883D5AB228182D7E00D22868 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AB028182D7E00D22868 /* Toolbar.swift */; };
+		883D5AB428182EC800D22868 /* SplitNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AB328182EC800D22868 /* SplitNavigationView.swift */; };
+		883D5AB528182EC800D22868 /* SplitNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AB328182EC800D22868 /* SplitNavigationView.swift */; };
+		883D5AB728189FB500D22868 /* Titlebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AB628189FB500D22868 /* Titlebar.swift */; };
+		883D5AB828189FB500D22868 /* Titlebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AB628189FB500D22868 /* Titlebar.swift */; };
+		883D5ABA28199A3100D22868 /* TextCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AB928199A3100D22868 /* TextCanvas.swift */; };
+		883D5ABB28199A3100D22868 /* TextCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AB928199A3100D22868 /* TextCanvas.swift */; };
+		883D5ABD2819CD6800D22868 /* RenameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5ABC2819CD6800D22868 /* RenameView.swift */; };
+		883D5ABE2819CD6800D22868 /* RenameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5ABC2819CD6800D22868 /* RenameView.swift */; };
+		883D5AEE281D8DCB00D22868 /* AttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AED281D8DCB00D22868 /* AttributedStringExtensions.swift */; };
+		883D5AEF281D8DCB00D22868 /* AttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AED281D8DCB00D22868 /* AttributedStringExtensions.swift */; };
+		883D5AF1281ECCBF00D22868 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AF0281ECCBF00D22868 /* NavigationBar.swift */; };
+		883D5AF2281ECCBF00D22868 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AF0281ECCBF00D22868 /* NavigationBar.swift */; };
+		883D5AF4281F01B200D22868 /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AF3281F01B200D22868 /* Browser.swift */; };
+		883D5AF5281F01B200D22868 /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5AF3281F01B200D22868 /* Browser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		883D5A502812EA6400D22868 /* WikiPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPadApp.swift; sourceTree = "<group>"; };
+		883D5A512812EA6400D22868 /* WikiPadDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPadDocument.swift; sourceTree = "<group>"; };
+		883D5A522812EA6400D22868 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		883D5A532812EA6500D22868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		883D5A582812EA6500D22868 /* WikiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		883D5A5B2812EA6500D22868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883D5A602812EA6500D22868 /* WikiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		883D5A622812EA6500D22868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883D5A632812EA6500D22868 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		883D5A742812EB8D00D22868 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
+		883D5A772812EBDD00D22868 /* TextStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStore.swift; sourceTree = "<group>"; };
+		883D5A7B2812F17C00D22868 /* OSLogExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogExtensions.swift; sourceTree = "<group>"; };
+		883D5A7E2812F21A00D22868 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		883D5A81281302DA00D22868 /* HypertextEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypertextEditor.swift; sourceTree = "<group>"; };
+		883D5A842813033500D22868 /* HypertextEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypertextEditor.swift; sourceTree = "<group>"; };
+		883D5A8B281316C700D22868 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		883D5A91281319F000D22868 /* NSMutableAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringExtensions.swift; sourceTree = "<group>"; };
+		883D5A942813448800D22868 /* NSStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringExtensions.swift; sourceTree = "<group>"; };
+		883D5A972813452C00D22868 /* ParagraphStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParagraphStyle.swift; sourceTree = "<group>"; };
+		883D5A9A28134BDE00D22868 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		883D5A9B28147BB000D22868 /* HypertextEditorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypertextEditorState.swift; sourceTree = "<group>"; };
+		883D5A9E2815A7D200D22868 /* FileCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCommands.swift; sourceTree = "<group>"; };
+		883D5AA12815BA9700D22868 /* TextStoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStoreProtocol.swift; sourceTree = "<group>"; };
+		883D5AA42815BAB800D22868 /* TextStoreMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStoreMemory.swift; sourceTree = "<group>"; };
+		883D5AA72815F7A500D22868 /* FocusedValuesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusedValuesExtension.swift; sourceTree = "<group>"; };
+		883D5AAA28182BA000D22868 /* SidebarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarList.swift; sourceTree = "<group>"; };
+		883D5AAD28182CA400D22868 /* LibraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
+		883D5AB028182D7E00D22868 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		883D5AB328182EC800D22868 /* SplitNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitNavigationView.swift; sourceTree = "<group>"; };
+		883D5AB628189FB500D22868 /* Titlebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titlebar.swift; sourceTree = "<group>"; };
+		883D5AB928199A3100D22868 /* TextCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCanvas.swift; sourceTree = "<group>"; };
+		883D5ABC2819CD6800D22868 /* RenameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameView.swift; sourceTree = "<group>"; };
+		883D5AED281D8DCB00D22868 /* AttributedStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringExtensions.swift; sourceTree = "<group>"; };
+		883D5AF0281ECCBF00D22868 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		883D5AF3281F01B200D22868 /* Browser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		883D5A552812EA6500D22868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883D5A5D2812EA6500D22868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		883D5A4A2812EA6400D22868 = {
+			isa = PBXGroup;
+			children = (
+				883D5A4F2812EA6400D22868 /* Shared */,
+				883D5A5A2812EA6500D22868 /* iOS */,
+				883D5A612812EA6500D22868 /* macOS */,
+				883D5A592812EA6500D22868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		883D5A4F2812EA6400D22868 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				883D5A9A28134BDE00D22868 /* Readme.md */,
+				883D5A502812EA6400D22868 /* WikiPadApp.swift */,
+				883D5A9E2815A7D200D22868 /* FileCommands.swift */,
+				883D5A512812EA6400D22868 /* WikiPadDocument.swift */,
+				883D5ABC2819CD6800D22868 /* RenameView.swift */,
+				883D5A9B28147BB000D22868 /* HypertextEditorState.swift */,
+				883D5AA12815BA9700D22868 /* TextStoreProtocol.swift */,
+				883D5AA42815BAB800D22868 /* TextStoreMemory.swift */,
+				883D5A522812EA6400D22868 /* ContentView.swift */,
+				883D5AB328182EC800D22868 /* SplitNavigationView.swift */,
+				883D5AB928199A3100D22868 /* TextCanvas.swift */,
+				883D5AB028182D7E00D22868 /* Toolbar.swift */,
+				883D5AB628189FB500D22868 /* Titlebar.swift */,
+				883D5AF0281ECCBF00D22868 /* NavigationBar.swift */,
+				883D5AAA28182BA000D22868 /* SidebarList.swift */,
+				883D5AAD28182CA400D22868 /* LibraryRow.swift */,
+				883D5A742812EB8D00D22868 /* TextModel.swift */,
+				883D5A772812EBDD00D22868 /* TextStore.swift */,
+				883D5AF3281F01B200D22868 /* Browser.swift */,
+				883D5A7E2812F21A00D22868 /* Debug.swift */,
+				883D5A7A2812F14300D22868 /* Extensions */,
+				883D5A532812EA6500D22868 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		883D5A592812EA6500D22868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				883D5A582812EA6500D22868 /* WikiPad.app */,
+				883D5A602812EA6500D22868 /* WikiPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		883D5A5A2812EA6500D22868 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				883D5A5B2812EA6500D22868 /* Info.plist */,
+				883D5A842813033500D22868 /* HypertextEditor.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		883D5A612812EA6500D22868 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				883D5A622812EA6500D22868 /* Info.plist */,
+				883D5A632812EA6500D22868 /* macOS.entitlements */,
+				883D5A81281302DA00D22868 /* HypertextEditor.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		883D5A7A2812F14300D22868 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				883D5AA72815F7A500D22868 /* FocusedValuesExtension.swift */,
+				883D5A8B281316C700D22868 /* StringExtensions.swift */,
+				883D5A942813448800D22868 /* NSStringExtensions.swift */,
+				883D5A91281319F000D22868 /* NSMutableAttributedStringExtensions.swift */,
+				883D5AED281D8DCB00D22868 /* AttributedStringExtensions.swift */,
+				883D5A972813452C00D22868 /* ParagraphStyle.swift */,
+				883D5A7B2812F17C00D22868 /* OSLogExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		883D5A572812EA6500D22868 /* WikiPad (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883D5A6E2812EA6500D22868 /* Build configuration list for PBXNativeTarget "WikiPad (iOS)" */;
+			buildPhases = (
+				883D5A542812EA6500D22868 /* Sources */,
+				883D5A552812EA6500D22868 /* Frameworks */,
+				883D5A562812EA6500D22868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WikiPad (iOS)";
+			productName = "WikiPad (iOS)";
+			productReference = 883D5A582812EA6500D22868 /* WikiPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		883D5A5F2812EA6500D22868 /* WikiPad (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883D5A712812EA6500D22868 /* Build configuration list for PBXNativeTarget "WikiPad (macOS)" */;
+			buildPhases = (
+				883D5A5C2812EA6500D22868 /* Sources */,
+				883D5A5D2812EA6500D22868 /* Frameworks */,
+				883D5A5E2812EA6500D22868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WikiPad (macOS)";
+			productName = "WikiPad (macOS)";
+			productReference = 883D5A602812EA6500D22868 /* WikiPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		883D5A4B2812EA6400D22868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					883D5A572812EA6500D22868 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					883D5A5F2812EA6500D22868 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 883D5A4E2812EA6400D22868 /* Build configuration list for PBXProject "WikiPad" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 883D5A4A2812EA6400D22868;
+			productRefGroup = 883D5A592812EA6500D22868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				883D5A572812EA6500D22868 /* WikiPad (iOS) */,
+				883D5A5F2812EA6500D22868 /* WikiPad (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		883D5A562812EA6500D22868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883D5A6A2812EA6500D22868 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883D5A5E2812EA6500D22868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883D5A6B2812EA6500D22868 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		883D5A542812EA6500D22868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883D5A8728130AE300D22868 /* HypertextEditor.swift in Sources */,
+				883D5A9F2815A7D200D22868 /* FileCommands.swift in Sources */,
+				883D5A782812EBDD00D22868 /* TextStore.swift in Sources */,
+				883D5A8C281316C700D22868 /* StringExtensions.swift in Sources */,
+				883D5A9C28147BB000D22868 /* HypertextEditorState.swift in Sources */,
+				883D5AAB28182BA000D22868 /* SidebarList.swift in Sources */,
+				883D5ABD2819CD6800D22868 /* RenameView.swift in Sources */,
+				883D5A752812EB8D00D22868 /* TextModel.swift in Sources */,
+				883D5A7C2812F17C00D22868 /* OSLogExtensions.swift in Sources */,
+				883D5A952813448800D22868 /* NSStringExtensions.swift in Sources */,
+				883D5A662812EA6500D22868 /* WikiPadDocument.swift in Sources */,
+				883D5A642812EA6500D22868 /* WikiPadApp.swift in Sources */,
+				883D5A7F2812F21A00D22868 /* Debug.swift in Sources */,
+				883D5AB728189FB500D22868 /* Titlebar.swift in Sources */,
+				883D5AA52815BAB800D22868 /* TextStoreMemory.swift in Sources */,
+				883D5AA82815F7A500D22868 /* FocusedValuesExtension.swift in Sources */,
+				883D5AAE28182CA400D22868 /* LibraryRow.swift in Sources */,
+				883D5AF1281ECCBF00D22868 /* NavigationBar.swift in Sources */,
+				883D5A92281319F000D22868 /* NSMutableAttributedStringExtensions.swift in Sources */,
+				883D5AB428182EC800D22868 /* SplitNavigationView.swift in Sources */,
+				883D5AF4281F01B200D22868 /* Browser.swift in Sources */,
+				883D5AEE281D8DCB00D22868 /* AttributedStringExtensions.swift in Sources */,
+				883D5A982813452C00D22868 /* ParagraphStyle.swift in Sources */,
+				883D5AB128182D7E00D22868 /* Toolbar.swift in Sources */,
+				883D5A682812EA6500D22868 /* ContentView.swift in Sources */,
+				883D5ABA28199A3100D22868 /* TextCanvas.swift in Sources */,
+				883D5AA22815BA9700D22868 /* TextStoreProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883D5A5C2812EA6500D22868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883D5A792812EBDD00D22868 /* TextStore.swift in Sources */,
+				883D5AA02815A7D200D22868 /* FileCommands.swift in Sources */,
+				883D5A83281302DA00D22868 /* HypertextEditor.swift in Sources */,
+				883D5A8D281316C700D22868 /* StringExtensions.swift in Sources */,
+				883D5A9D28147BB000D22868 /* HypertextEditorState.swift in Sources */,
+				883D5AAC28182BA000D22868 /* SidebarList.swift in Sources */,
+				883D5ABE2819CD6800D22868 /* RenameView.swift in Sources */,
+				883D5A762812EB8D00D22868 /* TextModel.swift in Sources */,
+				883D5A7D2812F17C00D22868 /* OSLogExtensions.swift in Sources */,
+				883D5A962813448900D22868 /* NSStringExtensions.swift in Sources */,
+				883D5A672812EA6500D22868 /* WikiPadDocument.swift in Sources */,
+				883D5A652812EA6500D22868 /* WikiPadApp.swift in Sources */,
+				883D5A802812F21A00D22868 /* Debug.swift in Sources */,
+				883D5AB828189FB500D22868 /* Titlebar.swift in Sources */,
+				883D5AA62815BAB800D22868 /* TextStoreMemory.swift in Sources */,
+				883D5AA92815F7A500D22868 /* FocusedValuesExtension.swift in Sources */,
+				883D5AAF28182CA400D22868 /* LibraryRow.swift in Sources */,
+				883D5AF2281ECCBF00D22868 /* NavigationBar.swift in Sources */,
+				883D5A93281319F000D22868 /* NSMutableAttributedStringExtensions.swift in Sources */,
+				883D5AB528182EC800D22868 /* SplitNavigationView.swift in Sources */,
+				883D5AF5281F01B200D22868 /* Browser.swift in Sources */,
+				883D5AEF281D8DCB00D22868 /* AttributedStringExtensions.swift in Sources */,
+				883D5A992813452C00D22868 /* ParagraphStyle.swift in Sources */,
+				883D5AB228182D7E00D22868 /* Toolbar.swift in Sources */,
+				883D5A692812EA6500D22868 /* ContentView.swift in Sources */,
+				883D5ABB28199A3100D22868 /* TextCanvas.swift in Sources */,
+				883D5AA32815BA9700D22868 /* TextStoreProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		883D5A6C2812EA6500D22868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		883D5A6D2812EA6500D22868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		883D5A6F2812EA6500D22868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW4KS53T57;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.michaelswarm.WikiPad;
+				PRODUCT_NAME = WikiPad;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		883D5A702812EA6500D22868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW4KS53T57;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.michaelswarm.WikiPad;
+				PRODUCT_NAME = WikiPad;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		883D5A722812EA6500D22868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW4KS53T57;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.michaelswarm.WikiPad;
+				PRODUCT_NAME = WikiPad;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		883D5A732812EA6500D22868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW4KS53T57;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.michaelswarm.WikiPad;
+				PRODUCT_NAME = WikiPad;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		883D5A4E2812EA6400D22868 /* Build configuration list for PBXProject "WikiPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883D5A6C2812EA6500D22868 /* Debug */,
+				883D5A6D2812EA6500D22868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883D5A6E2812EA6500D22868 /* Build configuration list for PBXNativeTarget "WikiPad (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883D5A6F2812EA6500D22868 /* Debug */,
+				883D5A702812EA6500D22868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883D5A712812EA6500D22868 /* Build configuration list for PBXNativeTarget "WikiPad (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883D5A722812EA6500D22868 /* Debug */,
+				883D5A732812EA6500D22868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 883D5A4B2812EA6400D22868 /* Project object */;
+}
