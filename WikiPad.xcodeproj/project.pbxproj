@@ -137,23 +137,11 @@
 				883D5A9A28134BDE00D22868 /* Readme.md */,
 				883D5A502812EA6400D22868 /* WikiPadApp.swift */,
 				883D5A9E2815A7D200D22868 /* FileCommands.swift */,
-				883D5A512812EA6400D22868 /* WikiPadDocument.swift */,
-				883D5ABC2819CD6800D22868 /* RenameView.swift */,
-				883D5A9B28147BB000D22868 /* HypertextEditorState.swift */,
-				883D5AA12815BA9700D22868 /* TextStoreProtocol.swift */,
-				883D5AA42815BAB800D22868 /* TextStoreMemory.swift */,
 				883D5A522812EA6400D22868 /* ContentView.swift */,
-				883D5AB328182EC800D22868 /* SplitNavigationView.swift */,
-				883D5AB928199A3100D22868 /* TextCanvas.swift */,
-				883D5AB028182D7E00D22868 /* Toolbar.swift */,
-				883D5AB628189FB500D22868 /* Titlebar.swift */,
-				883D5AF0281ECCBF00D22868 /* NavigationBar.swift */,
-				883D5AAA28182BA000D22868 /* SidebarList.swift */,
-				883D5AAD28182CA400D22868 /* LibraryRow.swift */,
-				883D5A742812EB8D00D22868 /* TextModel.swift */,
-				883D5A772812EBDD00D22868 /* TextStore.swift */,
-				883D5AF3281F01B200D22868 /* Browser.swift */,
-				883D5A7E2812F21A00D22868 /* Debug.swift */,
+				88DEBA50287B1E09009C873C /* Model */,
+				88DEBA51287B1E1A009C873C /* Main Views */,
+				88DEBA53287B1F09009C873C /* Toolbar Views */,
+				88DEBA52287B1ED1009C873C /* Support */,
 				883D5A7A2812F14300D22868 /* Extensions */,
 				883D5A532812EA6500D22868 /* Assets.xcassets */,
 			);
@@ -200,6 +188,50 @@
 				883D5A7B2812F17C00D22868 /* OSLogExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88DEBA50287B1E09009C873C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				883D5A512812EA6400D22868 /* WikiPadDocument.swift */,
+				883D5A9B28147BB000D22868 /* HypertextEditorState.swift */,
+				883D5AF3281F01B200D22868 /* Browser.swift */,
+				883D5AA12815BA9700D22868 /* TextStoreProtocol.swift */,
+				883D5AA42815BAB800D22868 /* TextStoreMemory.swift */,
+				883D5A772812EBDD00D22868 /* TextStore.swift */,
+				883D5A742812EB8D00D22868 /* TextModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88DEBA51287B1E1A009C873C /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				883D5AB328182EC800D22868 /* SplitNavigationView.swift */,
+				883D5AAA28182BA000D22868 /* SidebarList.swift */,
+				883D5AAD28182CA400D22868 /* LibraryRow.swift */,
+				883D5AB928199A3100D22868 /* TextCanvas.swift */,
+				883D5ABC2819CD6800D22868 /* RenameView.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		88DEBA52287B1ED1009C873C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				883D5A7E2812F21A00D22868 /* Debug.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		88DEBA53287B1F09009C873C /* Toolbar Views */ = {
+			isa = PBXGroup;
+			children = (
+				883D5AF0281ECCBF00D22868 /* NavigationBar.swift */,
+				883D5AB628189FB500D22868 /* Titlebar.swift */,
+				883D5AB028182D7E00D22868 /* Toolbar.swift */,
+			);
+			path = "Toolbar Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

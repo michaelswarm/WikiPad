@@ -5,6 +5,8 @@
 //  Created by Michael Swarm on 26/04/22.
 //
 
+//  Bug: TextField does not update if selection after edit-rename. Why???
+
 import SwiftUI
 
 struct Titlebar: View {
@@ -20,12 +22,14 @@ struct Titlebar: View {
     var body: some View {
         // TextField("", text: $title)
         ZStack {
-            /*Text(editorState.selection).font(.headline) // Font should actually be slightly larger. (Unedited document title is larger than this.)
+            // font .headline or .largeTitle
+            /*Text(editorState.selection).font(.title) // Font should actually be slightly larger. (Unedited document title is larger than this.)
                 .onTapGesture {
                     isEdit.toggle() // How to escape from TextField rename???
-                    // Changes opacity. Does not select-focus. Requires second selection to focus.
+                    // Changes opacity. Does not select-focus. Bug: Requires second selection to focus.
                 }
-                //.border(.blue)
+                .frame(minWidth: 200, alignment: .leading)
+                //.border(.red)
                 .opacity(isEdit ? 0.0 : 1.0)*/
             
             /*TextField(editorState.selection, text: $newKey) {
@@ -40,16 +44,21 @@ struct Titlebar: View {
                 // This sometimes works, sometimes does not.
             }*/
             TextField(text: $newKey) {
-                Text(editorState.selection) //.font(.largeTitle) // Font within text field supressed on Mac. (Does function on IOS.) 
+                // Prompt
+                // Prompt is light gray or opaque.
+                Text(editorState.selection) //.font(.largeTitle) // Font within text field supressed on Mac. (Does function on IOS.)
             }
             .textFieldStyle(.plain) // .automatic, .plain, .roundedBorder, .squareBorder
             .onSubmit {
-            isEdit.toggle()
-            print("Rename \(editorState.selection) to \(newKey)...")
-            // print("Document: \(String(describing: document))") // Always nil. (Not nil here. Prints the entire store!)
-            document.rename(oldTitle: editorState.selection, newTitle: newKey) // So don't need editor state new title?
+                isEdit.toggle()
+                print("Rename \(editorState.selection) to \(newKey)...")
+                // print("Document: \(String(describing: document))") // Always nil. (Not nil here. Prints the entire store!)
+                document.rename(oldTitle: editorState.selection, newTitle: newKey) // So don't need editor state new title?
+                newKey = "" // Bug fix: Return newKey to empty, so prompt show again.
             }
-            .frame(minWidth: 200)
+            .frame(minWidth: 200) // TextField default alignment leading
+            //.border(.blue)
+            //.opacity(isEdit ? 1.0 : 0.0)
 
             
             /*TextField(editorState.selection, text: $newKey)

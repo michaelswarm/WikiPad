@@ -29,10 +29,19 @@ struct TextCanvas: View {
     var body: some View {
         VStack {
             /*HStack { // Move title to top bar (unified tool-title bar).
-                Text(editorState.selection)
+                Text(editorState.selection) // Compare selection display here with titlebar selection. 
                 Spacer()
             }*/
             HypertextEditor(text: bindingText, libraryState: editorState)
+            /*Text(editorState.selection)
+            Divider()
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(editorState.links, id: \.self) { link in
+                        Text(link).lineLimit(1)
+                    }
+                }
+            }*/
             /*ScrollView {
                 Text((document.store.textDictionary[editorState.selection]?.content ?? "No content").hypertext())
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)

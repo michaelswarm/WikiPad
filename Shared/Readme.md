@@ -1,5 +1,22 @@
 #  Readme
 
+# Parts
+1. App
+2. Main views (views) 
+3. Titlebar views (views) 
+4. Document storage (model) 
+5. Hypertext view (views), state and standard data extensions (state becomes part of document) 
+6. Support (logs, performance)
+
+# To Do
+- What is needed to finish???
+- 1 month (July)???
+- Platform specific top level views:  IOS (NavigationView), iPadOS (NavigationView) and MacOS (HSplitView). No HSplitView on iPadOS until iPadOS 16. Start with existing platform (Mac?). Currently uses SplitNavigationView, which is just custom NavigationView. This does not work too well for Mac. Better to use HSplitView on Mac? (See ScreenSize for platform adaptation.) 
+- App vision and technology: Linked notes. Automatic hypertext.  
+- AppStore registration.  
+- App icon
+- App site
+
 This is basic working hypertext editor, which save to file. 
 
 Need to add and delete documents (pages?). 
@@ -14,7 +31,7 @@ Limitations
 - No print?
 - No find and replace? (Available Mac Hypertexts.) 
 
-# Tests
+# Automatic Link Test Cases
 This is a test. 
 This is test1. Self links are excluded. 
 

@@ -17,7 +17,12 @@ fileprivate func _end(_ name: StaticString) { debug.end(name) }
 import SwiftUI
 import UniformTypeIdentifiers
 
+// Bug: Will new and save, but not open.
+// 2022-07-10 11:33:41.328860-0500 WikiPad[1151:20916] com.example.wikipad is not a valid allowedFileType because it doesn't conform to UTTypeItem
 extension UTType {
+    static var wikipad: UTType {
+        UTType(exportedAs: "com.example.wikipad")
+    }
     static var exampleText: UTType {
         UTType(importedAs: "com.example.plain-text")
     }
@@ -63,7 +68,7 @@ struct WikiPadDocument: FileDocument {
         */
     }
     
-    static var readableContentTypes: [UTType] { [.exampleText] }
+    static var readableContentTypes: [UTType] { [.wikipad] }
     
     init(configuration: ReadConfiguration) throws {
         _begin("FileWrapperRead")
@@ -121,6 +126,7 @@ extension WikiPadDocument {
         store.insert(text)
         _info { "Add text: \(text.title)" }
         editorState.selection = newTitle
+        editorState.update(store: store, selection: editorState.selection) // Fix to add to links.
         editorState.browser.onAppend(title: newTitle)
 
         /*
@@ -136,6 +142,7 @@ extension WikiPadDocument {
             _info { "Delete text: \(title)" }
             // TBD: Set editor title...
             setStartTitle()
+            editorState.update(store: store, selection: editorState.selection) // Fix to remove from links.
             editorState.browser.onRemove() // Knows title from current index.
             // modified = Date()
         //}
@@ -149,6 +156,7 @@ extension WikiPadDocument {
         store.insert(new)
         store.delete(key: oldTitle)
         editorState.selection = newTitle // Could change selection between insert and delete. But view will probably not be updated until mutating func is complete. Then will update from mutated store with new title. Assume mutating function operates like transaction?
+        editorState.update(store: store, selection: editorState.selection) // Fix to add-remove to-from links.
         editorState.browser.onRename(fromTitle: oldTitle, toTitle: newTitle)
     }
     func back() {

@@ -26,10 +26,13 @@ class HypertextEditorState: ObservableObject { // storeObject? (Share between ap
         self.browser = Browser()
         self.browser.onAppend(title: title)
     }
-    func update(store: TextStoreMemory, selection: String) {
+    // 1 caller: LibraryRowView onTapGesture document.editorState.update(store: document.store, selection: title) // This does not trigger update, even though binding to struct. Why??? (Is this still true?) 
+
+    func update(store: TextStoreMemory, selection: String) { // How many places call this? Only 1 caller
         var titles: Set<String> = Set(store.textDictionary.keys)
         titles.remove(selection)
-        self.links = Array(titles) // Set links before update.
+        let shortestFirst = titles.sorted { $0.count < $1.count } // Sort by length, shortest first, for longest link match.
+        self.links = shortestFirst // Array(titles) // Set links before update.
         self.selection = selection // Trigger update last.
         self.browser.onAppend(title: selection) // ???
     }
